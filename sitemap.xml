@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://calldirectorai.github.io/my-med-clinic-home/about/</loc>
+    <lastmod>2026-11-06T20:18:52.917Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://calldirectorai.github.io/my-med-clinic-home/insurance/</loc>
     <lastmod>2026-11-06T20:18:45.658Z</lastmod>
     <changefreq>weekly</changefreq>
