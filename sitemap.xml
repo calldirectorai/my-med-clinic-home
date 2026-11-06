@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://calldirectorai.github.io/my-med-clinic-home/</loc>
+    <lastmod>2026-11-06T20:26:47.327Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://calldirectorai.github.io/my-med-clinic-home/contact/</loc>
-    <lastmod>2026-11-06T20:18:59.818Z</lastmod>
+    <lastmod>2026-11-06T20:26:41.701Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://calldirectorai.github.io/my-med-clinic-home/about/</loc>
-    <lastmod>2026-11-06T20:18:52.917Z</lastmod>
+    <lastmod>2026-11-06T20:26:41.428Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://calldirectorai.github.io/my-med-clinic-home/insurance/</loc>
-    <lastmod>2026-11-06T20:18:45.658Z</lastmod>
+    <lastmod>2026-11-06T20:26:41.019Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://calldirectorai.github.io/my-med-clinic-home/senior-care/</loc>
-    <lastmod>2026-11-06T20:18:38.736Z</lastmod>
+    <lastmod>2026-11-06T20:26:40.677Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://calldirectorai.github.io/my-med-clinic-home/services/</loc>
-    <lastmod>2026-11-06T20:18:31.562Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://calldirectorai.github.io/my-med-clinic-home/</loc>
-    <lastmod>2026-11-06T20:18:19.010Z</lastmod>
+    <lastmod>2026-11-06T20:26:40.392Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
