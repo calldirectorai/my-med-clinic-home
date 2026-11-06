@@ -337,15 +337,10 @@
 <div class="status"><span class="dot" id="dot"></span><span id="status">Open weekdays 9:30 to 5:00</span></div>
 <div class="status-sub" id="status-sub">Eastern Time</div>
 <ul class="hours" id="hours">
-<li data-d="1"><span>Monday</span><span>9:30 AM to 5:00 PM</span></li>
-<li data-d="2"><span>Tuesday</span><span>9:30 AM to 5:00 PM</span></li>
-<li data-d="3"><span>Wednesday</span><span>9:30 AM to 5:00 PM</span></li>
-<li data-d="4"><span>Thursday</span><span>9:30 AM to 5:00 PM</span></li>
-<li data-d="5"><span>Friday</span><span>9:30 AM to 5:00 PM</span></li>
-<li data-d="6"><span>Saturday</span><span>Closed</span></li>
-<li data-d="0"><span>Sunday</span><span>Closed</span></li>
+<li data-d="1 2 3 4 5"><span>Monday to Friday</span><span>9:30 AM to 5:00 PM</span></li>
+<li data-d="6 0"><span>Saturday and Sunday</span><span>Closed</span></li>
 </ul>
-<div class="addr">13225 Executive Park Terrace, Germantown, MD 20874</div>
+<div class="addr">13225 Executive Park Terrace<br>Germantown, MD 20874</div>
 <div class="acts"><a class="btn btn-call" href="tel:+13015401332"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>Call us</a><a class="btn btn-dir" href="https://www.google.com/maps/search/?api=1&query=My+Med+Clinic+13225+Executive+Park+Terrace+Germantown+MD+20874" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Directions</a></div>
 </aside>
 <script>
@@ -353,7 +348,7 @@
   var p=new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',weekday:'short',hour:'numeric',minute:'numeric',hour12:false}).formatToParts(new Date());
   var g=function(k){return (p.find(function(x){return x.type===k})||{}).value};
   var map={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6}, d=map[g('weekday')], m=(+g('hour')%24)*60+(+g('minute'));
-  var li=document.querySelector('#hours li[data-d="'+d+'"]'); if(li) li.classList.add('is-today');
+  var li=document.querySelector('#hours li[data-d~="'+d+'"]'); if(li) li.classList.add('is-today');
   var s=document.getElementById('status'), sub=document.getElementById('status-sub'), dot=document.getElementById('dot');
   var wk=d>=1&&d<=5, open=570, close=1020;
   if(wk&&m>=open&&m<close){ s.textContent='Open now until 5:00 PM'; var left=close-m; sub.textContent=left<=60?'Closing in '+left+' minutes. Call before then to reach the front desk.':'Call and our front desk will help you.'; }
@@ -447,4 +442,5 @@
   document.querySelectorAll('[data-year]').forEach(function(e){e.textContent=new Date().getFullYear()});
 })();
 </script>
+<script id="cd-links">(function(){if(location.hostname.indexOf('calldirector.ai')<0)return;var M={'':'HqrtiSJaPs','services':'xSN6Capwt','senior-care':'NdpjrU','insurance':'krLX5FC','about':'d6dJKEz3X6','contact':'bPZivtc'};document.querySelectorAll('a[href]').forEach(function(a){var h=a.getAttribute('href');if(/^(https?:|tel:|mailto:|#)/.test(h))return;var m=h.replace(/^(\.\.\/)+/,'').match(/^([a-z-]*)\/?(#.*)?$/);if(!m||!(m[1] in M))return;a.setAttribute('href','/p/'+M[m[1]]+(m[2]||''));});})();</script>
 </body></html>
